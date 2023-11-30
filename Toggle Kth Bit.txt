@@ -1,0 +1,20 @@
+For then Given Integer N togggle Kth bit of number
+Example: N = 2, K = 1, Binary representation of 2 is 10, after a 1st bit toggle we get 11=>3
+
+C++ Code:
+#include <bits/stdc++.h>
+using namespace std;
+//Function to toggle kth bit of Number.
+int toggleKthBit(int N, int K){
+	return (N^(1<<(K-1)));
+}
+
+int main() {
+	// your code goes here
+	int N, K;
+	cin>>N>>K;
+	cout<<toggleKthBit(N, K)<<endl;
+	
+	return 0;
+}
+ 
